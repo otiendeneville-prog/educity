@@ -1,0 +1,55 @@
+footer{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+    background-color: black;
+    padding: 100px 40px;
+    border-radius: 20px;
+    color: white;
+}
+ul{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+li{
+    margin-left: 70px;
+    
+}
+.tik{
+    color: wheat;
+    
+}
+p{
+    color: #438;
+    font-size: medium;
+}
+h5{
+    color: #438;
+    font-size: 20px;
+    margin-left: 50px;
+}
+.number{
+    padding: 4px 5px;
+    color: #438;
+
+}
+.intouch{
+    align-items: center;
+    margin-bottom: 60px;
+}
+.label{
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+li img{
+    width: 32px;
+   align-items: center;
+    margin-right: 9px;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,54 @@
+.contact-col ul li img{
+    width: 29px;
+    margin-right:10px;
+}
+.contact form input, .contact form textarea{
+    display: block;
+    padding: 15px;
+    width: 100%;
+    background:#EBECFE ;
+    margin-bottom: 15px;
+    resize: none;
+    border: 0;
+    outline: 0;
+    margin-top: 5px;
+
+
+}
+.btn dark-btn{
+    background-color: aqua;
+}
+.contact col p{
+    max-width: 50px;
+    line-height: 0.3;
+    
+}
+.contact-col ul li{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.contact col span{
+    display: block;
+    margin: 20px 0;
+}
+.contact-col{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 2rem;
+}
+
+.ul{
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-left: 45em;
+}
+
+
+.contact col{
+    float: left;    
+}
