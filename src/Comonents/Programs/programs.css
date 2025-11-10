@@ -6,6 +6,7 @@
     justify-content: space-between;
     text-align: center;
     display: flex;
+    transition: transform 3s ease-in-out;
 }
 .program_img{
     width: 30%;
@@ -14,7 +15,7 @@
     flex-direction: column;
     position:relative;
     margin-right: 10px;
-    
+    animation: alternate;
     
     
 }
@@ -25,4 +26,7 @@
 .h1{
     color: brown;
     font-size: 40px;
+}
+.program:hover{
+    transform: scale(1.2);
 }
