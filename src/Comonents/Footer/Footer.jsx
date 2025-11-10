@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import tik from "../../assets/tik.png";
+// 
 
 const Footer = () => {
   return (
@@ -27,7 +28,9 @@ const Footer = () => {
               <img src={tik} alt="" />
               Ticktok
             </li>
-            <li>Twitter</li>
+            <li>
+              <img src="" alt="" />
+              Twitter</li>
             <li>WhatsAPP</li>
           </span>
           <span>
@@ -38,13 +41,13 @@ const Footer = () => {
             <li>Educity Scolarship and &amp;Funding </li>
             <li>Teaching &amp; Examination Timetable</li>
           </span>
-          <span>
+          {/* <span>
             <h5 className="intouch">Get in Touch:</h5>
             <label className="lable">phone Number</label>
             <input className="number" type="text"placeholder="enter your phone number" /><br />
             <label className="lable">Email</label>
             <input type="text" placeholder="Type in your email" />
-          </span>
+          </span> */}
         </ul>
       </footer>
     </div>

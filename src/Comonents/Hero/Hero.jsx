@@ -1,7 +1,15 @@
 import React from "react";
 import "./Hero.css";
+import { useState } from "react";
 
 const Hero = () => {
+
+  const [message,setMessage] = useState('');
+  const handleClick = () =>{
+    <p>The message is {message}</p>
+    setMessage("We make the best out of our students and mentor then to succed in the upcoming future at our level best.")
+  }
+
   return (
     <div id="hero-container" className="hero container">
       <div className="hero-text">
@@ -13,7 +21,7 @@ const Hero = () => {
           competitive landscape. Explore our training categories below to find
           the perfect solution.
         </p>
-        <button className="btn">
+        <button onClick={handleClick} className="btn">
           Learn More{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +32,9 @@ const Hero = () => {
           >
             <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
           </svg>
-        </button>
+        </ button >
+        {message && <p>{message}</p>}
+        
       </div>
     </div>
   );

@@ -28,3 +28,7 @@ nav ul a{
     margin: 5px 20px;
     font-size: 16px;
 }
+nav ul a:hover{
+    color: wheat;
+    
+}

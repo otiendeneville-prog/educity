@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Campus.css";
 import gallery1 from "../../assets/gallery1.jpg";
 import gallery2 from "../../assets/gallery2.jpg";
@@ -6,6 +6,15 @@ import gallery3 from "../../assets/gallery3.jpg";
 import gallery4 from "../../assets/gallery4.jpg";
 
 const Campus = () => {
+  const [state, setState] = "useState";
+  const handleClick = () => {
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+      veritatis, tempora nobis quas tenetur voluptatibus architecto consequuntur
+      quidem vitae nisi qui debitis amet voluptatem officia totam et expedita
+      fuga quae?
+    </p>;
+  };
   return (
     <div id="campus" className="campus">
       <div className="gallery">
@@ -14,7 +23,7 @@ const Campus = () => {
         <img src={gallery3} alt="" />
         <img className="image4" src={gallery4} alt="" />
       </div>
-      <button>
+      <button onClick={handleClick}>
         See More here{" "}
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -23,6 +23,11 @@ const Testimonials = () => {
       description:
         " Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
     },
+  {
+    img: pic4,
+    description:
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non ipsa sunt nihil explicabo ea. Id tempora neque tenetur! Voluptates aliquam dolor dolorum modi laborum voluptate doloremque atque nesciunt eaque eligendi!"
+  }
   ];
   return (
     <div id="testimonials"className="pics">
