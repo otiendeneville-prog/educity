@@ -6,7 +6,7 @@ import {Link,animateScroll} from 'react-scroll';
 const Navbar = () => {
   return (
     <nav className='container'>
-        <img src={nesh} alt="" className='logo'/>
+        <img  src={nesh} alt="" className='logo'/>
         <ul>
             <Link to='hero-container' smooth={true} duration={500}><a href="#hero-container">Home Page </a></Link>
             <Link to='program' smooth={true} duration={500}><a href="#program">Program </a></Link>
