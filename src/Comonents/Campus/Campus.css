@@ -48,4 +48,10 @@ button:hover {
 .gallery :hover{
   transform: scale(1.1);
 }
+@media(width:800px){
+  .campus{
+    display: flex;
+    flex-direction: column;
+  }
+}
 

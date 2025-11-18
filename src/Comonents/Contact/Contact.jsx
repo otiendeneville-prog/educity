@@ -10,7 +10,7 @@ const Contact = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
+    setResult("Sending.... Will receave a notification in a while ");
     const formData = new FormData(event.target);
 
     formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
@@ -33,8 +33,8 @@ const Contact = () => {
   return (
     <div id="contact" className="contact">
       <div className="contact-col">
-        <h3>Send Us a message</h3>
-        <p>
+        <h3 className="send">Send Us a message</h3>
+        <p className="p">
           Feel free to reach out to our contact form or find our contact,
           <br />
           information below.Your feedback, questions and suggestions are,
@@ -42,7 +42,7 @@ const Contact = () => {
           important to us as we strive,
           <br /> to provide exeptional servieces to our University community
         </p>
-        <ul className="ul">
+        <ul>
           <li>
             <img src={email} alt="" />
             Contact@GreatStack.dev
@@ -71,7 +71,7 @@ const Contact = () => {
           <label>Phone Number</label>
           <input
             type="text"
-            name="phonr"
+            name="phone"
             placeholder="Enter your mobile number"
           />
           <label>Write your message here</label>
@@ -81,7 +81,7 @@ const Contact = () => {
             placeholder="Enter your message"
             required
           ></textarea>
-          <button type="submit" className="btn dark-btn">
+          <button type="submit" className="btn-dark-btn">
             Submit now
           </button>
         </form>

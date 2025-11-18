@@ -21,7 +21,7 @@ const Hero = () => {
           competitive landscape. Explore our training categories below to find
           the perfect solution.
         </p>
-        <button onClick={handleClick} className="btn">
+        <button onClick={handleClick} className="btn-hero">
           Learn More{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -1,9 +1,11 @@
 import React from "react";
 import "./Footer.css";
 import tik from "../../assets/tik.png";
+import { useSyncExternalStore } from "react";
 // 
 
 const Footer = () => {
+
   return (
     <div>
       <footer>
