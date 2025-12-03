@@ -16,38 +16,41 @@ nav{
     width: 140px;
     border-radius: 20px;
 }
+/* nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 16px;
+} */
+ .menu{
+    width: 50px;
+    cursor: pointer;
+    display: none;
+    
+
+}
 nav ul a{
      display: inline-block;
     list-style: none;
     margin: 5px 20px;
     font-size: 16px;
 }
-nav ul a:hover{
-    color: wheat;
+
+
+@media (max-width: 478px) {
     
-}
-@media (max-width: 1000px) {
-    .logo{
-        width: 140px;
+       nav .container{
+            width: 100vh;
+            flex-direction: column;
+            
+       } 
+       nav ul {
+        display: none;
+       }
+       menu{
+        flex-direction: column;
+       }
+       .logo{
+        margin-left: -100px;
+       }
     }
-
-    nav ul li{
-        margin: 10px 15px;
-    }
-}
-@media (max-width: 840px){
-
-    nav{
-        padding: 15px 0px;
-    }
-    nav ul{
-        position: fixed;
-        top: 0;
-        right: 0;
-        background: #212EA0;
-
-    }
-    
-}
-
-

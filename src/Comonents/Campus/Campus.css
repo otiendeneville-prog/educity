@@ -50,7 +50,7 @@ button:hover {
 }
 @media(width:800px){
   .campus{
-    display: flex;
+    display: block;
     flex-direction: column;
   }
 }

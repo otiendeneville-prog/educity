@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Outfit", sans-serif;
+  font-family: Franklin 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 17px;
   
 }
@@ -36,21 +36,19 @@ a{
   justify-content: center;
 }
 
-@media(max-width:768px){
+@media(max-width:800px){
   .container{
     flex-direction: column;
   }
 
-  .sidebar{
-    display: none;
-  }
+  
 }
 
-@media (min-width:769){
-  .container{
-    flex-direction: row;
-  }
-  .sidebar{
-    display: block;
-  }
-}
+@media(width =800px){
+        body{
+          width: 100%;
+
+        }
+    }
+
+  
