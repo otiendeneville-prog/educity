@@ -41,7 +41,7 @@ nav ul a{
     
        nav .container{
             width: 100vh;
-            flex-direction: column;
+            display: none;
             
        } 
        nav ul {

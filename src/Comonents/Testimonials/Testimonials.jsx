@@ -31,7 +31,8 @@ const Testimonials = () => {
   ];
   return (
     <div id="testimonials"className="pics">
-      <Card employees={employees} />;
+      {/* <Card employees={employees} />; */}
+      <Card/>
     </div>
   );
 };
