@@ -1,32 +1,38 @@
-.program{
-    margin: 40px auto;
-    display: flex;
-    width: 90%;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    display: flex;
-    transition: transform 3s ease-in-out;
+.program {
+  margin: 40px auto;
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  display: flex;
+  transition: transform 3s ease-in-out;
 }
-.program_img{
-    width: 30%;
-    border-radius: 10px;
-    display: flex;
+.program_img {
+  width: 30%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 10px;
+  animation: alternate;
+}
+.program1 {
+  flex-basis: 30%;
+  /* display: inline; */
+}
+.h1 {
+  color: brown;
+  font-size: 40px;
+}
+.program:hover {
+  transform: scale(1.2);
+}
+
+/*Ensure that the programs section is mobile responsive*/
+@media screen and (max-width: 480px) {
+  .program {
+    width: 100vw;
     flex-direction: column;
-    position:relative;
-    margin-right: 10px;
-    animation: alternate;
-    
-    
-}
-.program1{
-    flex-basis: 30%;
-    /* display: inline; */
-}
-.h1{
-    color: brown;
-    font-size: 40px;
-}
-.program:hover{
-    transform: scale(1.2);
+  }
 }

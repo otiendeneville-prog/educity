@@ -3,15 +3,16 @@ import "./Hero.css";
 import { useState } from "react";
 
 const Hero = () => {
-
-  const [message,setMessage] = useState('');
-  const handleClick = () =>{
-    <p>The message is {message}</p>
-    setMessage("We make the best out of our students and mentor then to succed in the upcoming future at our level best.")
-  }
+  const [message, setMessage] = useState("");
+  const handleClick = () => {
+    <p>The message is {message}</p>;
+    setMessage(
+      "We make the best out of our students and mentor then to succed in the upcoming future at our level best.",
+    );
+  };
 
   return (
-    <div id="hero-container" className="hero container">
+    <div id="hero-container" className="hero-container">
       <div className="hero-text">
         <h1>We Ensure Better Education For A Better World</h1>
         <p>
@@ -32,9 +33,8 @@ const Hero = () => {
           >
             <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
           </svg>
-        </ button >
+        </button>
         {message && <p>{message}</p>}
-        
       </div>
     </div>
   );

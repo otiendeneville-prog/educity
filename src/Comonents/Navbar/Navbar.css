@@ -1,4 +1,4 @@
-nav {
+.nav-container {
   width: 100%;
   background-color: #333;
   color: white;
@@ -33,22 +33,20 @@ nav ul a {
   list-style: none;
   margin: 5px 20px;
   font-size: 16px;
- 
 }
-@media screen and(max-width: 600px){
-  .container{
+@media screen and (max-width: 480px) {
+  .nav-container {
     display: none;
-    width: 50%;
   }
-
 }
-@media screen and(min-width:1025px){
-  .container{
+
+@media sreen and (max-width: 780) {
+}
+
+@media screen and (min-width: 1025px) {
+  .container {
     display: table-column;
     width: 33.3%;
     float: left;
   }
-
 }
-
-  

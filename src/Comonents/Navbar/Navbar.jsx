@@ -1,41 +1,50 @@
-import './Navbar.css'
-import nesh from '../../assets/nesh.jpg'
-import {Link,animateScroll} from 'react-scroll';
-import menu from '../../assets/menu.png'
-import { useState } from 'react';
-
+import "./Navbar.css";
+import nesh from "../../assets/nesh.jpg";
+import { Link, animateScroll } from "react-scroll";
+import menu from "../../assets/menu.png";
+import { useState } from "react";
 
 const Navbar = () => {
- 
-return (
-     <nav className='container'>
-      <img  src={nesh} alt="" className='logo'/>
+  return (
+    <nav className="nav-container">
+      <img className="logo" src={nesh} alt="" />
 
-<ul>
+      <ul>
+        <Link to="hero-container" smooth={true} duration={500}>
+          <a href="#hero-container">Home Page </a>
+        </Link>
 
-    <Link to='hero-container' smooth={true} duration={500}><a href="#hero-container">Home Page </a></Link>
+        <Link to="program" smooth={true} duration={500}>
+          <a href="#program">Program </a>
+        </Link>
 
-    <Link to='program' smooth={true} duration={500}><a href="#program">Program </a></Link>
+        <Link to="about" smooth={true} duration={500}>
+          <a href="#about-us">About Us</a>
+        </Link>
 
-   <Link to='about' smooth={true} duration={500}><a href="#about-us">About Us</a></Link> 
+        <Link to="campus" smooth={true} duration={500}>
+          <a href="#campus">Campus</a>
+        </Link>
 
-    <Link to='campus' smooth={true} duration={500}><a href="#campus">Campus</a></Link>
+        <Link to="testimonials" smooth={true} duration={500}>
+          {" "}
+          <a href="#testimonials">Testimonials</a>
+        </Link>
 
-   <Link to='testimonials' smooth={true} duration={500}> <a href="#testimonials">Testimonials</a></Link> 
+        <Link to="contact" smooth={true} duration={500}>
+          <a href="#contact">Contact us</a>
+        </Link>
 
-    <Link to='contact' smooth={true} duration={500}><a href="#contact">Contact us</a></Link>
-
-    <img src={menu}className='menu' onClick="toggleMenu()}"/>
-
-</ul>
- </nav>  
-)
-}
-
+        <img src={menu} className="menu" onClick="toggleMenu()}" />
+      </ul>
+    </nav>
+  );
+};
 
 export default Navbar;
 
-{/* <nav className="bg-neutral-primary fixed w-full z-20 top-0 start-0 border-b border-default transition-all duration-300s">
+{
+  /* <nav className="bg-neutral-primary fixed w-full z-20 top-0 start-0 border-b border-default transition-all duration-300s">
    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
          <img src="https://flowbite.com/docs/images/logo.svg" class="h-7" alt="Flowbite Logo" />
@@ -114,12 +123,8 @@ export default Navbar;
   </div>
  </nav>
 
- export default Navbar; */}
-
-
- 
-
-
+ export default Navbar; */
+}
 
 //  import { useState } from 'react';
 // import { Link } from 'react-scroll';
@@ -135,10 +140,9 @@ export default Navbar;
 
 //   return (
 //     <nav className="fixed top-0 left-0 w-full flex items-center justify-between py-4 px-[10%] bg-[#333] text-white z-50">
-    
+
 //       <img src={nesh} alt="Logo" className="w-13 h-20 cursor-pointer" />
 
-      
 //       <ul className={`
 //         fixed top-0 bottom-0 bg-[#212ea0] w-64 pt-20 transition-all duration-500 z-[-1]
 //         md:static md:flex md:w-auto md:p-0 md:bg-transparent md:z-auto
@@ -164,17 +168,14 @@ export default Navbar;
 //         </li>
 //       </ul>
 
-    
-//       <img 
-//         src={menu_icon} 
-//         alt="Menu Icon" 
-//         className="w-8 md:hidden cursor-pointer" 
-//         onClick={toggleMenu} 
+//       <img
+//         src={menu_icon}
+//         alt="Menu Icon"
+//         className="w-8 md:hidden cursor-pointer"
+//         onClick={toggleMenu}
 //       />
 //     </nav>
 //   );
 // };
 
 // export default Navbar;
-
-
