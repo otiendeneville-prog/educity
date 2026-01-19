@@ -86,10 +86,19 @@
     margin-bottom: 10px;
     margin-top: 50px;
 }
-@media(width:800px){
+@media(width:600px){
     .contact{
-        width: 100vh;
-        flex-direction: column;
-        display: none;
+      display: block;
+      text-align: center;
+    }
+    .contact-col{
+        padding: 20px;
     }
 }
+@media(width:600px){
+    .contact{
+        display: center;
+        text-align: center;
+    }
+}
+

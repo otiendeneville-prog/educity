@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <div>
-      <footer>
+      <footer className="footer">
         <ul>
           <span>
             <h3>Send Us a message</h3>

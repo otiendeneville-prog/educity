@@ -54,3 +54,11 @@ li img{
     border-radius: 5px;
 }
 
+
+@media(max-width:600px){
+    .footer{
+        display: block;
+        text-align: center;
+    }
+}
+
