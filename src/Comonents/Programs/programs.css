@@ -30,7 +30,7 @@
 }
 
 /*Ensure that the programs section is mobile responsive*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   .program {
     width: 100vw;
     flex-direction: column;

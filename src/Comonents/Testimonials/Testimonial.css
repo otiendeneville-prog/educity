@@ -39,4 +39,8 @@
   .pics {
     flex-direction: column;
   }
+  .card img{
+    flex-direction: column;
+    
+  }
 }

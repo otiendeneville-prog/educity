@@ -34,7 +34,7 @@ nav ul a {
   margin: 5px 20px;
   font-size: 16px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   .nav-container {
     display: none;
   }
@@ -43,7 +43,7 @@ nav ul a {
 @media sreen and (max-width: 780) {
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 480px) {
   .container {
     display: table-column;
     width: 33.3%;

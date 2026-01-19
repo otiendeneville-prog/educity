@@ -1,9 +1,10 @@
 .contact-col ul li img{
     width: 29px;
     margin-right:10px;
+    display: flex;
 }
 .contact form input, .contact form textarea{
-    display: block;
+    display: flex;
     padding: 20px;
     width: 100%;
     background:#EBECFE ;
@@ -50,7 +51,7 @@
 
 }
 .contact-col ul {
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -65,17 +66,7 @@
     margin-bottom: 30px;
 }
 
-@media(max-width:800px){
-    .contact{
-        display: flex;
-        flex-direction: row;
-    }
-    .contact input, .contact form textarea{
-            display: flex;
-            flex-direction: column;
-    }
-   
-}
+
 .contact-col li{
     font-size: 18px;
     margin-right: 32px;
@@ -86,19 +77,26 @@
     margin-bottom: 10px;
     margin-top: 50px;
 }
-@media(width:600px){
+
+
+@media screen and (max-width:780px) {
     .contact{
-      display: block;
-      text-align: center;
+        flex-direction: column;
+        width: 100vw;
     }
-    .contact-col{
-        padding: 20px;
+    /* .contact form input {
+        flex-direction: column;
     }
-}
-@media(width:600px){
-    .contact{
-        display: center;
-        text-align: center;
+    .contact form textarea {
+        flex-direction: column;
     }
+    .contact ul li img {
+        flex-direction: column;
+
+    }
+    .contact form p{
+        display: column;
+    } */
+
 }
 
