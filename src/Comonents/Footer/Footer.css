@@ -1,64 +1,75 @@
 footer{
     align-items: center;
     justify-content: center;
+    display: flex;
     text-align: center;
     padding: auto;
     background-color: black;
-    padding: 100px 40px;
+    padding: 60px 40px;
     border-radius: 20px;
     color: white;
 }
 ul{
     align-items: center;
     justify-content: center;
-    display: flex;
+   display: flex;
     
 }
-li{
-    margin-left: 70px;
+li {
+    margin-left: 100px;
     list-style: none;
+   
     
 }
-.tik{
-    color: wheat;
-    
+.face{
+    color: blue;
+     padding: 4px 4px;
+}
+.twitter{
+    color: skyblue;
+     padding: 4px 4px;
+}
+
+span{
+    gap: 10px;
+    align-items: center;
+    font-weight: bold;
 }
 p{
     color: #438;
     font-size: medium;
 }
-h5{
+h3{
     color: #438;
     font-size: 20px;
     margin-left: 50px;
 }
-.number{
-    padding: 4px 5px;
-    color: #438;
+.insta{
+    padding: 4px 4px;
+    color: orange;
 
 }
-.intouch{
-    align-items: center;
-    margin-bottom: 60px;
-}
-.label{
-    align-items: center;
-    text-align: center;
-    margin-right: 20px;
-    margin-top: 40px;
-}
-li img{
-    width: 32px;
-   align-items: center;
-    margin-right: 9px;
-    border-radius: 5px;
-}
 
-
-@media screen and (max-width:780px){
+.toppi{
+    margin-top: 140px;
+    padding: 4px;
+    
+}
+.toppi p{
+     color: gray;
+    margin-right: 100px;
+}
+@media screen and (max-width:780px) {
     .footer{
+        flex-direction: column;
+    }
+
+    .footer ul {
+        flex-direction: column;
+       
+    }
+    .footer span{
        flex-direction: column;
-       width: 100vw;
     }
 }
 

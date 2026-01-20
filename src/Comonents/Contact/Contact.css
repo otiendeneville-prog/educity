@@ -32,8 +32,8 @@
     
 .contact{
     display: flex;
-    align-items: end;
-    margin-left: 12rem;
+    align-items: center;
+    /* margin-left: 12rem; */
     
 }
 .contact-col ul li{
@@ -84,6 +84,9 @@
         flex-direction: column;
         width: 100vw;
     }
+    .contact-col ul{
+        flex-direction: column;
+    }
     /* .contact form input {
         flex-direction: column;
     }
@@ -99,4 +102,5 @@
     } */
 
 }
+
 

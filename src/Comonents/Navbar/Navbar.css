@@ -43,10 +43,13 @@ nav ul a {
 @media sreen and (max-width: 780) {
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 780px) {
   .container {
     display: table-column;
     width: 33.3%;
     float: left;
+  }
+  ul a li{
+    flex-direction: column;
   }
 }

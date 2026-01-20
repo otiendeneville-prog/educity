@@ -1,55 +1,51 @@
 import React from "react";
 import "./Footer.css";
-import tik from "../../assets/tik.png";
 import { useSyncExternalStore } from "react";
-// 
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+
+//
 
 const Footer = () => {
-
   return (
     <div>
       <footer className="footer">
         <ul>
           <span>
-            <h3>Send Us a message</h3>
-            <p>
-              Feel free to reach out to us or contact,in the,Our contacts below
-              <br />is genune and we will highly appreacite your contribution <br />
-              and wait for feedback which then won't dissapoint.
+            <h3>About Us</h3>
+            <p className="pal">
+              Educity is  a global leader in digital education, providing accessible,<br />
+              high-quality learning for the modern professional. Our mission is
+              to bridge,<br /> the skills gap by connecting expert instructors with
+              learners worldwide,<br /> through flexible, future-proof curricula
+              designed for the 2026 job market.
             </p>
 
-            <p>Contacts</p>
-            <li> Phone: +254 :798597024</li>
-            <li> Phone: +254 01016932815</li>
-            <label>email : </label>
-            <input type="text" placeholder="Type in your email"/>
+            
           </span>
           <span>
-            <p>Follow Us On</p>
-            <li>
-              <img src={tik} alt="" />
-              Ticktok
-            </li>
-            <li>
-              <img src="" alt="" />
-              Twitter</li>
-            <li>WhatsAPP</li>
+            <h3>Quick links</h3>
+            <ul>
+            </ul>
+              <li><a href="" className="hover:underline text-grey-300">Home</a></li>
+              <li><a href="" className="hover:underline text-grey-300">Services</a></li>
+              <li><a href="" className="hover:underline text-grey-300">Contact</a></li>
+              <li><a href="" className="hover:underline text-grey-300">About</a></li>
+              <li><a href="" className="hover:underline text-grey-300">Programs</a></li>
+              <li><a href="" className="hover:underline text-grey-300">Campus</a></li>
+              <li><a href="" className="hover:underline text-grey-300">Testimonials</a></li>
+
+          
           </span>
           <span>
-            <h5>These are our platforms</h5>
-            <li>Educity Website</li>
-            <li>Educity E-learnig and e-library</li>
-            <li>Student Portal</li>
-            <li>Educity Scolarship and &amp;Funding </li>
-            <li>Teaching &amp; Examination Timetable</li>
+            <h3>Follow Us</h3>
+            <li>< FaFacebook className="face"/><a href="" >Facebook</a></li>
+            <li>< FaTwitter className="twitter"/><a href="" className="hover:underline text-grey-300">Twitter</a></li>
+            <li>< FaInstagram className="insta"/><a href="" className="hover:underline text-grey-300">Instagram</a></li>
           </span>
-          {/* <span>
-            <h5 className="intouch">Get in Touch:</h5>
-            <label className="lable">phone Number</label>
-            <input className="number" type="text"placeholder="enter your phone number" /><br />
-            <label className="lable">Email</label>
-            <input type="text" placeholder="Type in your email" />
-          </span> */}
+          <span className="toppi">
+            <p>&copy; 2026 Code with Neuville. All right Reserved.</p>
+          </span>
+         
         </ul>
       </footer>
     </div>

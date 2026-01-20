@@ -59,7 +59,7 @@ const Contact = () => {
           </li>
         </ul>
       </div>
-      <div className="contact col">
+      <div className="contact-col">
         <form onSubmit={onSubmit}>
           <label>Your name</label>
           <input
