@@ -17,39 +17,49 @@
   justify-content: baseline;
   align-items: baseline;
   text-align: flex-start;
+  display: flex;
 }
-/* nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 5px 20px;
-    font-size: 16px;
-} */
+
 .menu {
-  width: 30px;
+  width: 40px;
   cursor: pointer;
   display: none;
+  height: 40px;
+  background-color: gainsboro;
+  border-radius: 10px;
+ 
 }
 nav ul a {
   list-style: none;
   margin: 5px 20px;
   font-size: 16px;
 }
-@media screen and (max-width: 780px) {
+/* @media screen and (max-width: 780px) {
   .nav-container {
+    display: flex;
+  }
+  .menu{
+    display:column;
+  }
+  nav ul a{
+    display: none;
+  }
+} */
+
+@media screen and (max-width: 780px) {
+  .container {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .logo{
+    display: flex;
+  }
+  .menu{
+    flex-direction:column;
+    display: flex;
+  }
+  nav ul a{
     display: none;
   }
 }
 
-@media sreen and (max-width: 780) {
-}
-
-@media screen and (min-width: 780px) {
-  .container {
-    display: table-column;
-    width: 33.3%;
-    float: left;
-  }
-  ul a li{
-    flex-direction: column;
-  }
-}

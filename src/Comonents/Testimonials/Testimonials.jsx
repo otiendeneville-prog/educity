@@ -6,7 +6,7 @@ import pic3 from "../../assets/pic3.jpg";
 import pic4 from "../../assets/pic4.jpg";
 import Card from "../Card";
 
-const Testimonials = () => {
+const Testimonials = (props) => {
   const employees = [
     {
       img: pic1,
@@ -31,7 +31,7 @@ const Testimonials = () => {
   ];
   return (
     <div id="testimonials"className="pics">
-      <Card employees={employees} />;
+      <Card employees={ props.employees} />;
       <Card/>
     </div>
   );
