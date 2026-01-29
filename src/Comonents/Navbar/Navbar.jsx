@@ -5,7 +5,8 @@ import menu from "../../assets/menu.png";
 import { useState } from "react";
 
 const Navbar = () => {
-  return (
+  }
+    return (
     <nav className="nav-container">
       <img className="logo" src={nesh} alt="" />
 
@@ -33,8 +34,7 @@ const Navbar = () => {
 
         <Link to="contact" smooth={true} duration={500}>
           <a href="#contact">Contact us</a>
-        </Link>
-
+        </Link>s
         <img src={menu} className="menu" onClick="toggleMenu()}" />
       </ul>
     </nav>
