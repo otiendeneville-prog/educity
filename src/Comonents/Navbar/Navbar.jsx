@@ -5,17 +5,12 @@ import menu from "../../assets/menu.png";
 import { useState } from "react";
 
 const Navbar = () => {
-<<<<<<< HEAD
 
   // const[menu, setMenu] = useState(false)
   // const toggleMenu = () => {
   //   setMenu(menu)
   // }
   return (
-=======
-  }
-    return (
->>>>>>> 337460416fb3f9576009af862fe4eeb830783a41
     <nav className="nav-container">
       <img className="logo" src={nesh} alt="" />
 
@@ -43,14 +38,9 @@ const Navbar = () => {
 
         <Link to="contact" smooth={true} duration={500}>
           <a href="#contact">Contact us</a>
-<<<<<<< HEAD
         </Link>
 
         <img src={menu} className="menu" onClick="{toggleMenu}" />
-=======
-        </Link>s
-        <img src={menu} className="menu" onClick="toggleMenu()}" />
->>>>>>> 337460416fb3f9576009af862fe4eeb830783a41
       </ul>
     </nav>
   );
