@@ -38,9 +38,9 @@ const Footer = () => {
           </span>
           <span>
             <h3>Follow Us</h3>
-            <li>< FaFacebook className="face"/><a href="" >Facebook</a></li>
+            <li>< FaFacebook className="facebook"/><a href="" >Facebook</a></li>
             <li>< FaTwitter className="twitter"/><a href="" className="hover:underline text-grey-300">Twitter</a></li>
-            <li>< FaInstagram className="insta"/><a href="" className="hover:underline text-grey-300">Instagram</a></li>
+            <li>< FaInstagram className="instagram"/><a href="" className="hover:underline text-grey-300">Instagram</a></li>
           </span>
           <span className="toppi">
             <p>&copy; 2026 Code with Neuville. All right Reserved.</p>
