@@ -34,7 +34,7 @@ nav ul a {
   margin: 5px 20px;
   font-size: 16px;
 }
-/* @media screen and (max-width: 780px) {
+@media screen and (max-width: 780px) {
   .nav-container {
     display: flex;
   }
@@ -44,22 +44,6 @@ nav ul a {
   nav ul a{
     display: none;
   }
-} */
-
-@media screen and (max-width: 780px) {
-  .container {
-    flex-direction: column;
-    width: 100vw;
-  }
-  .logo{
-    display: flex;
-  }
-  .menu{
-    flex-direction:column;
-    display: flex;
-  }
-  nav ul a{
-    display: none;
-  }
 }
 
+/* 

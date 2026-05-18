@@ -1,54 +1,58 @@
 import React from "react";
 import "./Footer.css";
-import { useSyncExternalStore } from "react";
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
-
-//
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div>
-      <footer className="footer">
-        <ul>
-          <span>
-            <h3>About Us</h3>
-            <p className="pal">
-              Educity is  a global leader in digital education, providing accessible,<br />
-              high-quality learning for the modern professional. Our mission is
-              to bridge,<br /> the skills gap by connecting expert instructors with
-              learners worldwide,<br /> through flexible, future-proof curricula
-              designed for the 2026 job market.
-            </p>
+    <footer className="footer">
+      <ul>
+        {/* About */}
+        <span>
+          <h3>About Us</h3>
+          <p className="pal">
+            Educity is a global leader in digital education, providing
+            accessible, high-quality learning for the modern professional.
+            Our mission is to bridge the skills gap by connecting expert
+            instructors with learners worldwide through flexible,
+            future-proof curricula designed for the 2026 job market.
+          </p>
+        </span>
 
-            
-          </span>
-          <span>
-            <h3>Quick links</h3>
-            <ul>
-            </ul>
-              <li><a href="" className="hover:underline text-grey-300">Home</a></li>
-              <li><a href="" className="hover:underline text-grey-300">Services</a></li>
-              <li><a href="" className="hover:underline text-grey-300">Contact</a></li>
-              <li><a href="" className="hover:underline text-grey-300">About</a></li>
-              <li><a href="" className="hover:underline text-grey-300">Programs</a></li>
-              <li><a href="" className="hover:underline text-grey-300">Campus</a></li>
-              <li><a href="" className="hover:underline text-grey-300">Testimonials</a></li>
+        {/* Quick Links */}
+        <span>
+          <h3>Quick Links</h3>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/programs">Programs</a></li>
+          <li><a href="/campus">Campus</a></li>
+          <li><a href="/testimonials">Testimonials</a></li>
+        </span>
 
-          
-          </span>
-          <span>
-            <h3>Follow Us</h3>
-            <li>< FaFacebook className="facebook"/><a href="" >Facebook</a></li>
-            <li>< FaTwitter className="twitter"/><a href="" className="hover:underline text-grey-300">Twitter</a></li>
-            <li>< FaInstagram className="instagram"/><a href="" className="hover:underline text-grey-300">Instagram</a></li>
-          </span>
-          <span className="toppi">
-            <p>&copy; 2026 Code with Neuville. All right Reserved.</p>
-          </span>
-         
-        </ul>
-      </footer>
-    </div>
+        {/* Follow Us */}
+        <span>
+          <h3>Follow Us</h3>
+          <li>
+            <FaFacebook className="facebook"/>
+            <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+          </li>
+          <li>
+            <FaTwitter className="twitter"/>
+            <a href="https://twitter.com" target="_blank" rel="noreferrer">Twitter</a>
+          </li>
+          <li>
+            <FaInstagram className="instagram"/>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+          </li>
+        </span>
+
+        {/* Copyright */}
+        <span className="toppi">
+          <p>&copy; 2026 Code with Neuville. All Rights Reserved.</p>
+        </span>
+      </ul>
+    </footer>
   );
 };
 

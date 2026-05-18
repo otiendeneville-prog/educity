@@ -1,75 +1,191 @@
-footer{
-    align-items: center;
-    justify-content: center;
-    display: flex;
+/* /* Footer.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background: linear-gradient(135deg, #0D0D1A 0%, #1A1A2E 100%);
+  color: #fff;
+  padding: 60px 40px 30px;
+  border-radius: 20px 20px 0 0;
+  margin-top: 40px;
+}
+
+/* Main grid layout */
+footer ul {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  list-style: none;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Each column */
+footer span {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+/* Headings */
+footer h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 8px 0;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+/* Underline accent on headings */
+footer h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(to right, #4F46E5, #00CFFF);
+  border-radius: 2px;
+}
+
+/* About us paragraph */
+.pal {
+  font-size: 14px;
+  color: #A0AEC0;
+  line-height: 1.8;
+  font-weight: 400;
+  max-width: 320px;
+}
+
+/* List items */
+footer li {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Links */
+footer li a {
+  color: #A0AEC0;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  transition: color 0.3s, padding-left 0.3s;
+}
+
+footer li a:hover {
+  color: #4F46E5;
+  padding-left: 6px;
+}
+
+/* Social icons */
+.facebook {
+  color: #1877F2;
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+.twitter {
+  color: #1DA1F2;
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+.instagram {
+  color: #E1306C;
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+footer li:hover .facebook,
+footer li:hover .twitter,
+footer li:hover .instagram {
+  transform: scale(1.2);
+}
+
+/* Divider line */
+.footer-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 40px 0 20px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Copyright */
+.toppi {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 20px;
+}
+
+.toppi p {
+  color: #718096;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* ── RESPONSIVE ── */
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+  footer ul {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  footer > ul > span:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .pal {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 580px) {
+  footer {
+    padding: 40px 20px 24px;
+    border-radius: 16px 16px 0 0;
+  }
+
+  footer ul {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  footer h3 {
+    font-size: 16px;
+  }
+
+  .pal {
+    font-size: 13px;
+  }
+
+  footer li a {
+    font-size: 13px;
+  }
+
+  .toppi {
     text-align: center;
-    padding: auto;
-    background-color: black;
-    padding: 60px 40px;
-    border-radius: 20px;
-    color: white;
-}
-ul{
-    align-items: center;
-    justify-content: center;
-   display: flex;
-    
-}
-li {
-    margin-left: 100px;
-    list-style: none;
-   
-    
-}
-.face{
-    color: blue;
-     padding: 4px 4px;
-}
-.twitter{
-    color: skyblue;
-     padding: 4px 4px;
-}
+  }
 
-span{
-    gap: 10px;
-    align-items: center;
-    font-weight: bold;
+  .toppi p {
+    margin: 0;
+    font-size: 12px;
+  }
 }
-p{
-    color: #438;
-    font-size: medium;
-}
-h3{
-    color: #438;
-    font-size: 20px;
-    margin-left: 50px;
-}
-.insta{
-    padding: 4px 4px;
-    color: orange;
-
-}
-
-.toppi{
-    margin-top: 140px;
-    padding: 4px;
-    
-}
-.toppi p{
-     color: gray;
-    margin-right: 100px;
-}
-@media screen and (max-width:780px) {
-    .footer{
-        flex-direction: column;
-    }
-
-    .footer ul {
-        flex-direction: column;
-       
-    }
-    .footer span{
-       flex-direction: column;
-    }
-}
-
