@@ -1,106 +1,189 @@
-.contact-col ul li img{
-    width: 29px;
-    margin-right:10px;
-    display: flex;
-}
-.contact form input, .contact form textarea{
-    display: flex;
-    padding: 20px;
-    width: 100%;
-    background:#EBECFE ;
-    margin-bottom: 15px;
-    resize: none;
-    border: 0;
-    outline: 0;
-    margin-top: 5px;
-    
+/* Contact.css */
 
-
+* {
+  box-sizing: border-box;
 }
 
-.btn-dark-btn{
-    margin-top: 20px;
-    padding: 20px 80px;
-    margin-top:5px;
-    margin-bottom: 30px;
+/* ── Main container ── */
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 60px 80px;
+  background: #f9f9ff;
+}
 
+/* ── Each column ── */
+.contact-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
-.contact col p{
-    max-width: 50px;
-    line-height: 0.3;
-}
-    
-.contact{
-    display: flex;
-    align-items: center;
-    /* margin-left: 12rem; */
-    
-}
-.contact-col ul li{
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-}
-.contact col {
-    display: flex;
-    margin-bottom:  60px;
-    margin-top: 50px;
 
-
-   
-
+/* ── Heading ── */
+.send {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 16px;
+  margin-top: 0;
+  position: relative;
+  padding-bottom: 10px;
 }
+
+.send::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #4F46E5;
+  border-radius: 2px;
+}
+
+/* ── Description paragraph ── */
+.contact-col .p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 24px;
+  max-width: 420px;
+}
+
+/* ── Contact info list ── */
 .contact-col ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-col ul li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+.contact-col ul li img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* ── Form ── */
+.contact-col form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-col form label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.contact-col form input,
+.contact-col form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  background: #EBECFE;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+  resize: none;
+  transition: border 0.3s;
+  margin-bottom: 12px;
+}
+
+.contact-col form input:focus,
+.contact-col form textarea:focus {
+  border-color: #4F46E5;
+  background: #fff;
+}
+
+.contact-col form input::placeholder,
+.contact-col form textarea::placeholder {
+  color: #999;
+}
+
+/* ── Submit button ── */
+.btn-dark-btn {
+  padding: 14px 40px;
+  background: #4F46E5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+.btn-dark-btn:hover {
+  background: #3730A3;
+  transform: translateY(-2px);
+}
+
+/* ── Result message ── */
+.form-result {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #2ECC71;
+  font-weight: 600;
+}
+
+/* ── TABLET ── */
+@media screen and (max-width: 900px) {
+  .contact {
+    padding: 50px 40px;
+    gap: 30px;
+  }
+
+  .contact-col .p {
+    max-width: 100%;
+  }
+}
+
+/* ── MOBILE ── */
+@media screen and (max-width: 640px) {
+  .contact {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .contact-col {
+    width: 100%;
+  }
+
+  .send {
+    font-size: 22px;
+  }
+
+  .contact-col .p {
+    font-size: 14px;
+  }
+
+  .contact-col ul li {
+    font-size: 14px;
+  }
+
+  .btn-dark-btn {
+    width: 100%;
     text-align: center;
-    margin-left: 40px;
-    margin-top: 4rem;
-    margin-bottom: 10rem;
-    font-size: 20px;
-
+  }
 }
-.p{
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-
-.contact-col li{
-    font-size: 18px;
-    margin-right: 32px;
-}
-.send{
-    font-size: 30px;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    margin-top: 50px;
-}
-
-
-@media screen and (max-width:780px) {
-    .contact{
-        flex-direction: column;
-        width: 100vw;
-    }
-    .contact-col ul{
-        flex-direction: column;
-    }
-    /* .contact form input {
-        flex-direction: column;
-    }
-    .contact form textarea {
-        flex-direction: column;
-    }
-    .contact ul li img {
-        flex-direction: column;
-
-    }
-    .contact form p{
-        display: column;
-    } */
-
-}
-
-
