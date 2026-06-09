@@ -1,46 +1,46 @@
 .pics {
   margin: 40px auto;
-  /* display: flex; */
   width: 90%;
-  align-items: center;
-  /* justify-content: space-between; */
-  /* text-align: center; */
   display: flex;
+  justify-content: center;
+  gap: 20px; /* Replaces unstable margins with consistent spacing */
+  flex-wrap: wrap; /* Allows cards to drop to the next line naturally */
 }
 
 .hello {
-  margin-top: 24rem;
-  float: inline-start;
+  margin-top: 2rem; /* Reduced from 24rem to prevent massive mobile blank space */
   color: #333;
 }
+
 .card {
-  /* display: flex;
-    flex-direction: column; */
-  max-width: 40%;
-  /* padding: 20px 5px 0px 30px; */
-  margin-right: 10px;
+  flex: 1 1 250px; /* Flex-grow, flex-shrink, and a smart default base width */
+  max-width: 100%; /* Allows it to fill smaller screens completely */
   border: 1px solid lightgray;
   border-radius: 10px 10px 0px 0px;
-  object-fit: contain;
+  overflow: hidden; /* Clips image corners to match the border-radius */
   transition: transform 0.3s ease-in-out;
 }
 
 .card img {
-  min-width: 100%;
-  max-height: 280px;
-  border-radius: 10px 10px 0px 0px;
-  animation: alternate;
-}
-.pics :hover {
-  transform: scale(1.1);
+  width: 100%; /* Forces image to scale perfectly to the card width */
+  height: 250px; /* Set fixed height to make all images uniform */
+  object-fit: cover; /* Crops image cleanly without stretching it */
 }
 
-@media screen and (max-width: 480px) {
+/* Specific hover on the card element, not the parent container */
+.card:hover {
+  transform: scale(1.05); 
+}
+
+/* Tablet and Mobile adjustments */
+@media screen and (max-width: 768px) {
   .pics {
     flex-direction: column;
+    align-items: center;
   }
-  .card img{
-    flex-direction: column;
-    
+  
+  .card {
+    width: 100%;
+    max-width: 400px; /* Prevents cards from getting awkwardly wide on mobile */
   }
 }
