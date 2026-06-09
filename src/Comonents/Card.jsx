@@ -1,4 +1,5 @@
 import './Testimonials/Testimonial.css';
+import React from 'react';
 
 const Card = (props) => {
 

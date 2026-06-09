@@ -31,7 +31,7 @@ const Testimonials = (props) => {
   ];
   return (
     <div id="testimonials"className="pics">
-      <Card employees={ props.employees} />;
+      <Card employees={ employees} />;
       <Card/>
     </div>
   );
